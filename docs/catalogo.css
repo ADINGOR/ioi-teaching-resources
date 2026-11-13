@@ -1,30 +1,44 @@
-:root { color-scheme: light; font-family: "Instrument Sans", "Segoe UI", sans-serif; color: #182926; background: #f3f6f3; }
+:root {
+  color-scheme: light;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  --blue: #3e5888;
+  --sky: #4c89b5;
+  --peach: #fac8a3;
+  --ink: #26364e;
+  --line: #d7e1ed;
+  --muted-line: #8092a9;
+  color: var(--ink);
+  background: #f4f7fb;
+}
 * { box-sizing: border-box; }
 body { margin: 0; }
-a { color: #075d4c; }
+a { color: var(--blue); text-underline-offset: .16em; }
 .shell { width: min(1120px, calc(100% - 36px)); margin-inline: auto; }
-.bar { background: #fff; border-bottom: 1px solid #dbe6df; }
+.bar { background: #fff; border-bottom: 1px solid var(--line); }
 .nav, .section-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.nav { min-height: 68px; }
-.brand { font-weight: 800; letter-spacing: .08em; text-decoration: none; }
-.button { background: #075d4c; color: #fff; text-decoration: none; padding: .65rem .9rem; border-radius: .45rem; }
-.intro { padding: 2.8rem 0; background: #163e35; color: #fff; }
+.nav { min-height: 86px; }
+.brand { display: block; flex: 0 1 152px; min-width: 0; }
+.brand img { display: block; width: 100%; height: auto; }
+.button { background: var(--blue); color: #fff; font-weight: 700; text-decoration: none; padding: .65rem .9rem; border-radius: .45rem; }
+.button:hover { background: #31466c; }
+.intro { padding: 2.8rem 0; background: var(--blue); border-bottom: 5px solid var(--sky); color: #fff; }
 h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); margin: 0; letter-spacing: -.04em; }
 .intro p { max-width: 60ch; line-height: 1.6; margin-bottom: 0; }
 .layout { display: grid; grid-template-columns: minmax(200px, 245px) minmax(0, 1fr); gap: 28px; padding-block: 28px; align-items: start; }
-aside, article { background: #fff; border: 1px solid #dbe6df; border-radius: 12px; padding: 1.15rem; }
+aside, article { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.15rem; }
 h2 { font-size: 1.2rem; margin: 0; }
 .results > label { display: block; font-weight: 700; margin-bottom: .4rem; }
 input[type="search"], select, button { font: inherit; color: inherit; }
-input[type="search"], select { border: 1px solid #869e92; border-radius: .45rem; padding: .55rem; background: #fff; }
+input[type="search"], select { border: 1px solid var(--muted-line); border-radius: .45rem; padding: .55rem; background: #fff; }
+input[type="checkbox"] { accent-color: var(--blue); }
 input[type="search"] { width: 100%; padding: .8rem; }
-button { cursor: pointer; border: 1px solid #869e92; background: #fff; border-radius: .45rem; padding: .35rem .55rem; }
-:focus-visible { outline: 3px solid #aa5a10; outline-offset: 3px; }
-details { border-top: 1px solid #dbe6df; margin-top: .85rem; padding-top: .65rem; }
+button { cursor: pointer; border: 1px solid var(--muted-line); background: #fff; border-radius: .45rem; padding: .35rem .55rem; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+details { border-top: 1px solid var(--line); margin-top: .85rem; padding-top: .65rem; }
 summary { cursor: pointer; font-weight: 650; }
 details label { display: flex; align-items: baseline; gap: .45rem; margin-top: .5rem; overflow-wrap: anywhere; }
 .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-block: .7rem; }
-.chip { display: inline-block; border-radius: 1rem; padding: .2rem .6rem; background: #e5f2eb; color: #154a3c; font-size: .88rem; }
+.chip { display: inline-block; border-radius: 1rem; padding: .2rem .6rem; background: #e8eff9; color: #2e4773; font-size: .88rem; }
 #cards { display: grid; gap: 12px; }
 article h3 { margin: 0; font-size: 1.26rem; }
 article p { line-height: 1.55; margin: .55rem 0; }
@@ -32,5 +46,8 @@ article dl { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr
 article dt { font-weight: 700; }
 article dd { margin: 0; overflow-wrap: anywhere; }
 .resource-link { display: inline-block; margin-top: .55rem; }
-footer { border-top: 1px solid #dbe6df; padding-block: 1.2rem; color: #38534a; }
+.footer { border-top: 4px solid var(--sky); padding-block: 1.2rem; background: var(--blue); }
+.footer a { color: #fff; font-weight: 600; }
+.footer a:hover, .footer a:focus-visible { color: var(--peach); }
+.footer a:focus-visible { outline-color: var(--peach); }
 @media (max-width: 700px) { .layout { grid-template-columns: 1fr; gap: 18px; } .intro { padding-block: 1.8rem; } }
