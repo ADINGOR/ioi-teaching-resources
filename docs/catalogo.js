@@ -47,7 +47,7 @@ function renderCard(resource, opened) {
   detail.open = opened || location.hash === '#' + resource.id;
   const fields = element('dl');
   const labels = {
-    autor: 'Autoría', asignaturas: 'Asignaturas', conceptos: 'Conceptos', finalidad: 'Finalidad',
+    autor: 'Autoría', propuesto_por: 'Propuesto por', asignaturas: 'Asignaturas', conceptos: 'Conceptos', finalidad: 'Finalidad',
     idiomas: 'Idioma', nivel: 'Nivel', formatos: 'Formato', condiciones_acceso: 'Condiciones de acceso',
     registro: 'Registro', coste: 'Coste', licencia: 'Licencia', permisos: 'Reutilización',
     contacto_publico: 'Contacto autorizado', fecha_revision: 'Última revisión',

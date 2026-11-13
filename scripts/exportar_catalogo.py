@@ -37,6 +37,10 @@ def export_catalog(source):
                 continue
             try:
                 record = {key: (row.get(key) or "").strip() for key in PUBLIC}
+                proposer = (row.get("propuesto_por") or "").strip()
+                consent = (row.get("autoriza_atribucion") or "").strip().casefold()
+                if proposer and consent == "sí" and "@" not in proposer:
+                    record["propuesto_por"] = proposer
                 if not all(record[key] for key in REQUIRED):
                     raise ValueError("faltan campos obligatorios")
                 slug = record["id"]

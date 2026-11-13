@@ -16,6 +16,8 @@ Usa `Público`, `Restringido` o `Bajo solicitud` en `acceso`. En `url_publica` i
 
 La actualización desde Excel se ejecuta actualmente mediante exportación. La automatización de Forms y la sincronización con el Excel de la comisión quedan pendientes de configurar en Microsoft 365.
 
+Para reconocer a quien propone el recurso, usa las columnas opcionales `propuesto_por` y `autoriza_atribucion`. Copia solo el nombre público indicado en el formulario y escribe `Sí` en la segunda columna cuando conste la autorización expresa. El exportador omite el nombre si falta esa autorización o si el campo contiene una dirección de correo.
+
 ## Desarrollo local
 
 Ejecuta `python -m http.server 8000 --directory docs` y abre [localhost:8000](http://localhost:8000/). La búsqueda y los filtros se ejecutan en el navegador. Las fichas existentes conservan su dirección y los resultados de la portada se pueden enlazar mediante su identificador.
