@@ -1,0 +1,170 @@
+[
+  {
+    "id": "optimizacion-mit-ocw",
+    "titulo": "Optimization Methods in Management Science",
+    "descripcion": "Curso con apuntes y ejercicios para formular y resolver modelos de optimización en problemas de producción y logística.",
+    "autor": "James Orlin y Ebrahim Nasrabadi · MIT OpenCourseWare",
+    "tipos": [
+      "Curso",
+      "Ejercicios"
+    ],
+    "areas": [
+      "Investigación operativa y optimización"
+    ],
+    "conceptos": [
+      "Programación lineal",
+      "Programación entera",
+      "Optimización en redes"
+    ],
+    "asignaturas": [
+      "Investigación Operativa"
+    ],
+    "finalidad": [
+      "Explicar",
+      "Practicar"
+    ],
+    "idiomas": [
+      "Inglés"
+    ],
+    "formatos": [
+      "Web",
+      "PDF"
+    ],
+    "nivel": "Grado",
+    "acceso": "Público",
+    "condiciones_acceso": "Consulta gratuita de los materiales publicados.",
+    "registro": "No",
+    "coste": "Gratuito",
+    "url_publica": "https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/",
+    "contacto_publico": "",
+    "licencia": "CC BY-NC-SA 4.0",
+    "licencia_url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "permisos": "Uso no comercial, con atribución y la misma licencia para adaptaciones distribuidas. Comprueba los avisos de terceros.",
+    "fecha_revision": "2026-11-13"
+  },
+  {
+    "id": "direccion-operaciones-mit-ocw",
+    "titulo": "Introduction to Operations Management",
+    "descripcion": "Curso con ejercicios y preguntas de casos. Permite comparar políticas de reposición y su efecto sobre el inventario.",
+    "autor": "Charles H. Fine y Tauhid Zaman · MIT OpenCourseWare",
+    "tipos": [
+      "Curso",
+      "Ejercicios"
+    ],
+    "areas": [
+      "Dirección de operaciones y producción",
+      "Logística y cadena de suministro"
+    ],
+    "conceptos": [
+      "Inventarios",
+      "Capacidad",
+      "Calidad"
+    ],
+    "asignaturas": [
+      "Dirección de Operaciones"
+    ],
+    "finalidad": [
+      "Explicar",
+      "Practicar"
+    ],
+    "idiomas": [
+      "Inglés"
+    ],
+    "formatos": [
+      "Web"
+    ],
+    "nivel": "Posgrado",
+    "acceso": "Público",
+    "condiciones_acceso": "Acceso gratuito a los materiales de OCW. Algunas lecturas y simulaciones son externas.",
+    "registro": "No",
+    "coste": "Gratuito",
+    "url_publica": "https://ocw.mit.edu/courses/15-761-introduction-to-operations-management-spring-2013/",
+    "contacto_publico": "",
+    "licencia": "CC BY-NC-SA 4.0",
+    "licencia_url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "permisos": "Uso no comercial, con atribución y la misma licencia para adaptaciones distribuidas. Comprueba los avisos de terceros.",
+    "fecha_revision": "2026-11-13"
+  },
+  {
+    "id": "principles-of-management-openstax",
+    "titulo": "Principles of Management",
+    "descripcion": "Libro de texto sobre dirección y diseño organizativo. El alumnado puede proponer un organigrama para una empresa industrial que abre una segunda planta.",
+    "autor": "OpenStax · Rice University",
+    "tipos": [
+      "Libro de texto"
+    ],
+    "areas": [
+      "Organización y estrategia empresarial"
+    ],
+    "conceptos": [
+      "Diseño organizativo",
+      "Organigramas"
+    ],
+    "asignaturas": [
+      "Organización de Empresas"
+    ],
+    "finalidad": [
+      "Explicar",
+      "Ejemplificar"
+    ],
+    "idiomas": [
+      "Inglés"
+    ],
+    "formatos": [
+      "Web"
+    ],
+    "nivel": "Grado",
+    "acceso": "Público",
+    "condiciones_acceso": "Lectura gratuita en línea.",
+    "registro": "No",
+    "coste": "Gratuito",
+    "url_publica": "https://openstax.org/books/principles-management/pages/preface",
+    "contacto_publico": "",
+    "licencia": "CC BY-NC-SA 4.0",
+    "licencia_url": "https://openstax.org/books/principles-management/pages/preface",
+    "permisos": "Licencia declarada para la edición web. Atribuye a OpenStax y sus colaboradores y comprueba los avisos de cada figura.",
+    "fecha_revision": "2026-11-13"
+  },
+  {
+    "id": "gamificacion-adingor",
+    "titulo": "IOI Gamification Repository",
+    "descripcion": "Buscador de juegos docentes sobre operaciones, proyectos y cadenas de suministro. Permite filtrar por materia e idioma.",
+    "autor": "Comisión de Coordinación Docente de ADINGOR",
+    "tipos": [
+      "Repositorio",
+      "Juegos"
+    ],
+    "areas": [
+      "Docencia y evaluación transversal",
+      "Dirección de operaciones y producción",
+      "Gestión de proyectos",
+      "Logística y cadena de suministro"
+    ],
+    "conceptos": [
+      "Gamificación",
+      "Aprendizaje activo"
+    ],
+    "asignaturas": [],
+    "finalidad": [
+      "Practicar",
+      "Experimentar"
+    ],
+    "idiomas": [
+      "Variable según el juego"
+    ],
+    "formatos": [
+      "Web"
+    ],
+    "nivel": "Grado y posgrado",
+    "acceso": "Público",
+    "condiciones_acceso": "Repositorio público. Los juegos enlazados tienen sus propias condiciones.",
+    "registro": "",
+    "coste": "Variable según el juego",
+    "url_publica": "https://github.com/ADINGOR/ioi-gamification-repository",
+    "contacto_publico": "",
+    "licencia": "MIT (proyecto)",
+    "licencia_url": "https://github.com/ADINGOR/ioi-gamification-repository#license",
+    "permisos": "Consulta los permisos de cada juego de terceros en su fuente original.",
+    "fecha_revision": "2026-11-13"
+  }
+]

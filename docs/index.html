@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo docente · ADINGOR</title>
+  <link rel="stylesheet" href="catalogo.css">
+  <script src="catalogo.js" defer></script>
+</head>
+<body>
+  <header class="bar">
+    <div class="shell nav">
+      <a class="brand" href="./">ADINGOR</a>
+      <a class="button" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=tbCjKoKnOE-omOSDsg6NYVouv23hYX9Kjs7sW2gOnjJUODRSMjYwQllBM0hVUFRHQUI2NDc5TDNDTS4u">Proponer un recurso</a>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="shell">
+      <h1>Catálogo docente</h1>
+      <p>Encuentra recursos para enseñar Ingeniería de Organización Industrial y consulta cómo acceder a ellos y reutilizarlos.</p>
+    </div>
+  </section>
+  <main class="shell layout">
+    <aside aria-labelledby="filters-title">
+      <div class="section-head">
+        <h2 id="filters-title">Filtros</h2>
+        <button id="clear" type="button">Limpiar</button>
+      </div>
+      <div id="filters"></div>
+    </aside>
+    <section class="results" aria-labelledby="results-title">
+      <label for="search">Buscar recursos</label>
+      <input id="search" type="search" placeholder="Ej. programación lineal, inventarios o diseño organizativo">
+      <div id="active" class="chips" aria-label="Filtros activos"></div>
+      <div class="section-head">
+        <h2 id="results-title">Recursos</h2>
+        <label for="sort">Orden
+          <select id="sort"><option value="relevance">Relevancia</option><option value="updated">Última revisión</option><option value="title">Título</option></select>
+        </label>
+      </div>
+      <p id="status" role="status">Cargando recursos…</p>
+      <noscript>Activa JavaScript para buscar y filtrar los recursos.</noscript>
+      <div id="cards"></div>
+    </section>
+  </main>
+  <footer class="shell">Comisión de Coordinación Docente · ADINGOR</footer>
+</body>
+</html>
