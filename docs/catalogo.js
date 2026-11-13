@@ -28,8 +28,12 @@ function renderCard(resource, opened) {
   heading.append(title);
   card.append(heading, element('p', resource.descripcion));
   const chips = element('div', '', 'chips');
-  for (const value of [...values(resource.tipos), ...values(resource.areas), resource.acceso]) {
-    chips.append(element('span', value, 'chip'));
+  for (const key of ['tipos', 'areas', 'acceso']) {
+    for (const value of values(resource[key])) {
+      const chip = element('span', '', 'chip chip--' + key);
+      chip.append(element('span', facets[key] + ': ', 'chip-label'), document.createTextNode(value));
+      chips.append(chip);
+    }
   }
   card.append(chips);
 
@@ -97,7 +101,7 @@ function start(resources) {
     active.replaceChildren();
     for (const [key, inputs] of selected) {
       for (const input of inputs) {
-        const chip = element('button', facets[key] + ': ' + input.value + ' ×', 'chip');
+        const chip = element('button', facets[key] + ': ' + input.value + ' ×', 'chip chip--' + key);
         chip.type = 'button';
         chip.addEventListener('click', () => {
           input.checked = false;
