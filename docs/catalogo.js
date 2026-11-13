@@ -22,20 +22,26 @@ function element(tag, text, className) {
 function renderCard(resource, opened) {
   const card = element('article');
   card.id = resource.id;
+  const types = values(resource.tipos);
+  const symbol = types.includes('Juegos') ? '🎲' : types.includes('Libro de texto') ? '📖' : types.includes('Curso') ? '🎓' : '📄';
+  const thumbnail = element('span', symbol, 'resource-thumbnail');
+  thumbnail.setAttribute('aria-hidden', 'true');
+  const overview = element('div', '', 'resource-overview');
+  const copy = element('div');
   const title = element('a', resource.titulo);
   title.href = '#' + resource.id;
   const heading = element('h3');
   heading.append(title);
-  card.append(heading, element('p', resource.descripcion));
+  copy.append(heading, element('p', resource.descripcion));
   const chips = element('div', '', 'chips');
   for (const key of ['tipos', 'areas', 'acceso']) {
     for (const value of values(resource[key])) {
-      const chip = element('span', '', 'chip chip--' + key);
-      chip.append(element('span', facets[key] + ': ', 'chip-label'), document.createTextNode(value));
-      chips.append(chip);
+      chips.append(element('span', value, 'chip chip--' + key));
     }
   }
-  card.append(chips);
+  copy.append(chips);
+  overview.append(thumbnail, copy);
+  card.append(overview);
 
   const detail = element('details');
   detail.open = opened || location.hash === '#' + resource.id;
@@ -101,8 +107,9 @@ function start(resources) {
     active.replaceChildren();
     for (const [key, inputs] of selected) {
       for (const input of inputs) {
-        const chip = element('button', facets[key] + ': ' + input.value + ' ×', 'chip chip--' + key);
+        const chip = element('button', input.value + ' ×', 'chip chip--' + key);
         chip.type = 'button';
+        chip.setAttribute('aria-label', 'Quitar filtro de ' + facets[key].toLowerCase() + ': ' + input.value);
         chip.addEventListener('click', () => {
           input.checked = false;
           render();

@@ -42,7 +42,17 @@ details label { display: flex; align-items: baseline; gap: .45rem; margin-top: .
 .chip--tipos { background: #3e5888; border-color: #3e5888; color: #fff; }
 .chip--areas { background: #eee8f9; border-color: #bba9d4; color: #533b76; }
 .chip--acceso { background: #fac8a3; border-color: #a76338; color: #632d15; }
-.chip-label { font-weight: 700; }
+.resource-overview { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .85rem; }
+.resource-thumbnail {
+  display: grid;
+  place-items: center;
+  width: clamp(2.5rem, 7vw, 3.5rem);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: #edf2f9;
+  font-size: clamp(1.2rem, 4vw, 1.65rem);
+}
 #cards { display: grid; gap: 12px; }
 article h3 { margin: 0; font-size: 1.26rem; }
 article p { line-height: 1.55; margin: .55rem 0; }
